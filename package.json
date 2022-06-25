@@ -1,0 +1,25 @@
+{
+  "name": "techquizapi",
+  "version": "1.0.0",
+  "description": "an api for the app techquiz",
+  "main": "server.js",
+  "scripts": {
+    "startdev": "nodemon server.js"
+  },
+  "keywords": [
+    "api",
+    "techquiz"
+  ],
+  "author": "Inês Borges",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
+    "serve": "^13.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
