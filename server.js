@@ -13,7 +13,7 @@ db.once("open", () => console.log("Connected to database"));
 
 
 // Middleware
-app.use(cors());
+app.use(cors({origin: true, credentials: true}));
 // app.use(function(req, res, next) {
 //   res.header("Access-Control-Allow-Origin", "*");
 //   res.header(

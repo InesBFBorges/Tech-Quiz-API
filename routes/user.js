@@ -32,7 +32,7 @@ router.post("/postUser", getUser, async (req, res) => {
       res.status(400).json({error: true, message: err.message});
     }
   }else { // If there is user with that username give a error message
-    return res.json(400).json({error: true, message: "There is already a user with this username"});
+    return res.json(401).json({error: true, message: "There is already a user with this username"});
   }
 });
 
