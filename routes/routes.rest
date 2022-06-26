@@ -14,3 +14,13 @@ Content-Type: application/json
 {
   "username": "user1"
 }
+
+###
+
+POST https://tech-quiz-api-2022.herokuapp.com/users/postUser
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "password1"
+}
