@@ -32,15 +32,15 @@ router.post("/postUser", getUser, async (req, res) => {
       res.status(400).json({error: true, message: err.message});
     }
   }else { // If there is user with that username give a error message
-    return res.json(401).json({error: true, message: "There is already a user with this username"});
+    res.json(401).json({error: true, message: "There is already a user with this username"});
   }
 });
 
 router.get("/enterApp", getUser, async (req, res) => {
   if(res.user === null){ 
-    return res.status(400).json({error: true, message: "There is no user with this username"});
+    res.status(400).json({error: true, message: "There is no user with this username"});
   }else { 
-    return res.status(200).json(res.user);
+    res.status(200).json(res.user);
   }
 });
 
@@ -51,7 +51,7 @@ async function getUser(req, res, next) {
     user = await User.findOne({username: new RegExp('^'+req.body.username+'$', "i")});
 
   }catch(err){
-    return res.status(400).json({message: err.message});
+    res.status(400).json({message: err.message});
   }
 
   res.user = user
