@@ -2,8 +2,8 @@ POST http://localhost:3000/users/postUser
 Content-Type: application/json
 
 {
-    "username": "user4",
-    "password": "password4"
+    "username": "user11",
+    "password": "password11"
 }
 
 ###
@@ -21,6 +21,6 @@ POST https://tech-quiz-api-2022.herokuapp.com/users/postUser
 Content-Type: application/json
 
 {
-    "username": "user4",
-    "password": "password4"
+    "username": "user12",
+    "password": "password12"
 }
